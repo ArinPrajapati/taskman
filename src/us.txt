@@ -1,0 +1,44 @@
+  let name: string;
+  let age: number;
+  let age2 : number | string;
+  let isStudent: boolean;
+  let hobbies: string[];
+  let allDate: number[];
+  let role: [number, string];
+  // let printName:Function;
+  // function printName(name:string){
+  //   console.log(name);
+  // }
+
+  // let printName: (name:string) => void;
+  // let printName: (name:string) => never; 
+
+  // type Person ={
+  //   name : string;
+  //   age : number;
+  //   day?: number;
+
+  // }
+
+  let personName:unknown;
+  // let person: Person ={
+  //   name:'arin',
+  //   age:54,
+  // }
+
+  // let lotsOfPeople: Person[];
+
+  type X = {
+    a : String,
+    b: number,
+  }
+
+  type y= {
+    c : string,
+    d: number,
+  }
+
+  let Y:y = {
+    c : "afdk",
+    d : 42 ,
+  }
