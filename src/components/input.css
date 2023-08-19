@@ -16,7 +16,7 @@
 }
 
 .input_box:focus-visible {
-  box-shadow: 0 0 10px 1000px rgb(49, 49, 49,0.7);
+  box-shadow: 0 0 10px 1000px rgb(49, 49, 49, 0.7);
   outline: none;
 }
 
@@ -33,29 +33,57 @@
   background: rgb(210, 70, 70);
 }
 
-.input_btn:hover{
-    background: rgb(9, 115, 252);
-
+.input_btn:hover {
+  background: rgb(9, 115, 252);
 }
 
-.input_btn:active{
-    transform: scale(0.8);
-    box-shadow: 0 0 13px black;
+.input_btn:active {
+  transform: scale(0.8);
+  box-shadow: 0 0 13px black;
 }
 
-
-.todos{
+.todos {
   display: flex;
   justify-content: space-evenly;
   width: 90%;
   flex-wrap: wrap;
 }
 
-.todos_single {
+.todos_single{
   display: flex;
-  width: 29.5%;
+  width: 30%;
   border-radius: 5px;
   padding: 20px;
-  margin-top:15px ;
-  background-image:url(https://css-tricks.com/wp-content/uploads/2022/09/checkerboard-gradient.jpg) ;
+  margin-top: 15px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-image: url(https://css-tricks.com/wp-content/uploads/2022/09/checkerboard-gradient.jpg);
 }
+
+.todos_single-text {
+  flex: 1;
+  padding: 5px;
+  border: none;
+  font-size: 20px;
+}
+
+.todos_single-text:focus {
+  outline: none;
+}
+.icon {
+  margin-left: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+@media (max-width:700px){
+  .input{
+    width: 95%;
+  }
+  .todos{
+    width: 95%;
+  }
+  .todos_single{
+    width: 100%;
+  }
+}
+
